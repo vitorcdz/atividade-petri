@@ -1,0 +1,51 @@
+public class MainListaDinamica {
+
+    public static void main(String[] args) {
+
+        ListaDinamica lista = new ListaDinamica();
+
+        System.out.println("=== Adicionando vários elementos ===");
+        String[] elementos = {"Ana", "Carlos", "Pedro", "Ana", "Maria"};
+        int adicionados = lista.adicionarVarios(elementos);
+        System.out.println("Elementos adicionados: " + adicionados);
+        lista.exibir();
+
+        System.out.println("\n=== Contar elementos ===");
+        System.out.println("Total de elementos: " + lista.contar());
+
+        System.out.println("\n=== Obter elemento por índice ===");
+        System.out.println("Elemento no índice 2: " + lista.obter(2));
+
+        System.out.println("\n=== Inserir elemento em índice específico ===");
+        boolean inseriu = lista.inserir(2, "João");
+        System.out.println("Inserção realizada: " + inseriu);
+        lista.exibir();
+
+        System.out.println("\n=== Contar ocorrências de Ana ===");
+        int ocorrencias = lista.contarOcorrencias("Ana");
+        System.out.println("Ana aparece " + ocorrencias + " vezes");
+
+        System.out.println("\n=== Último índice de Ana ===");
+        int ultimoIndice = lista.ultimoIndiceDe("Ana");
+        System.out.println("Último índice de Ana: " + ultimoIndice);
+
+        System.out.println("\n=== Substituir Ana por Julia ===");
+        int substituidos = lista.substituir("Ana", "Julia");
+        System.out.println("Substituições realizadas: " + substituidos);
+        lista.exibir();
+
+        System.out.println("\n=== Remover elemento por índice ===");
+        String removido = lista.removerPorIndice(1);
+        System.out.println("Elemento removido: " + removido);
+        lista.exibir();
+
+        System.out.println("\n=== Remover todas ocorrências de Julia ===");
+        int removidos = lista.removerTodas("Julia");
+        System.out.println("Total removido: " + removidos);
+        lista.exibir();
+
+        System.out.println("\n=== Limpar lista ===");
+        lista.limpar();
+        lista.exibir();
+    }
+}
