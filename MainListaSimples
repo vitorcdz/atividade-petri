@@ -1,0 +1,74 @@
+public class MainListaSimples {
+
+    public static void main(String[] args) {
+        ListaSimples lista = new ListaSimples(10);
+
+        System.out.println("=== Adicionando elementos ===");
+        lista.adicionarElemento("Ana");
+        lista.adicionarElemento("Carlos");
+        lista.adicionarElemento("Pedro");
+        lista.adicionarElemento("Ana");
+
+        System.out.println("\n=== Exibindo lista ===");
+        lista.exibirElementos();
+
+        System.out.println("\n=== Buscar elemento ===");
+        int pos = lista.buscarElemento("Carlos");
+        System.out.println("Carlos encontrado no índice: " + pos);
+
+        System.out.println("\n=== Alterar elemento ===");
+        lista.alterarElemento("Pedro", "João");
+        lista.exibirElementos();
+
+        System.out.println("\n=== Quantidade de elementos ===");
+        lista.quantidadeElementos();
+
+        System.out.println("\n=== Contar elementos (interface) ===");
+        System.out.println("Total: " + lista.contar());
+
+        System.out.println("\n=== Adicionar vários ===");
+        String[] novos = {"Maria", "Lucas", "Ana"};
+        int adicionados = lista.adicionarVarios(novos);
+        System.out.println("Elementos adicionados: " + adicionados);
+        lista.exibirElementos();
+
+        System.out.println("\n=== Obter elemento por índice ===");
+        System.out.println("Elemento no índice 2: " + lista.obter(2));
+
+        System.out.println("\n=== Inserir em índice específico ===");
+        boolean inseriu = lista.inserir(5, "Roberto");
+        System.out.println("Inserção realizada: " + inseriu);
+        lista.exibirElementos();
+
+        System.out.println("\n=== Contar ocorrências de Ana ===");
+        int ocorrencias = lista.contarOcorrencias("Ana");
+        System.out.println("Ana aparece " + ocorrencias + " vezes");
+
+        System.out.println("\n=== Último índice de Ana ===");
+        int ultimo = lista.ultimoIndiceDe("Ana");
+        System.out.println("Último índice de Ana: " + ultimo);
+
+        System.out.println("\n=== Substituir Ana por Julia ===");
+        int substituidos = lista.substituir("Ana", "Julia");
+        System.out.println("Substituições realizadas: " + substituidos);
+        lista.exibirElementos();
+
+        System.out.println("\n=== Remover por índice ===");
+        String removido = lista.removerPorIndice(2);
+        System.out.println("Elemento removido: " + removido);
+        lista.exibirElementos();
+
+        System.out.println("\n=== Remover elemento específico ===");
+        lista.removerElemento("Carlos");
+        lista.exibirElementos();
+
+        System.out.println("\n=== Remover todas ocorrências ===");
+        int removidos = lista.removerTodas("Julia");
+        System.out.println("Total removido: " + removidos);
+        lista.exibirElementos();
+
+        System.out.println("\n=== Limpar lista ===");
+        lista.limpar();
+        lista.exibirElementos();
+    }
+}
