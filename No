@@ -1,0 +1,25 @@
+public class No {
+    private String valor;
+    private No proximo;
+
+    public No(String valor) {
+        this.valor = valor;
+        this.proximo = null;
+    }
+
+    public String getValor() {
+        return this.valor;
+    }
+
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
+    public No getProximo() {
+        return this.proximo;
+    }
+
+    public void setProximo(No proximo) {
+        this.proximo = proximo;
+    }
+}
