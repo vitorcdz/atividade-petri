@@ -1,4 +1,4 @@
-# atividade-petri
+# Trabalho de Estrutura de Dados(Lista Simples e Lista Dinâmica)
 Grupo:
 
 Vitor Hugo Cardozo(5 últimos métodos da ListaSimples e criou o repositório)
