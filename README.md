@@ -1,4 +1,4 @@
-# Trabalho de Estrutura de Dados(Lista Simples e Lista Dinâmica)
+# Trabalho de Estrutura de Dados
 Grupo:
 
 Vitor Hugo Cardozo(5 últimos métodos da ListaSimples e criou o repositório)
